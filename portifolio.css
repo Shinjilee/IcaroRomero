@@ -1,0 +1,81 @@
+/*orgazindo espaçamento da página*/
+body,ul,li,p{
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/*estilizando o cabeçalho*/
+.header{margin: 0px;
+    grid-area: header;
+    background-color: rgb(196, 6, 6);
+    padding: 30px;
+    display: grid;  }
+
+    .header nav a{
+        display: block;
+        padding: 10px;
+        color: white;
+        font-size: 30px;
+        background: rgba(0,0,0,0.1);
+        border-radius: 10px;
+        transition: 0.1s;
+        margin-right: 200px;
+        margin-left: 235px; }
+
+        header nav a:hover{
+            background: rgba(0,0,0,0.5);
+        }
+/*cor da página*/
+        body{
+            background-color: rgb(230, 230, 223);
+        }
+
+        .header nav ul {
+            display: flex;
+        }
+
+        body{
+            margin: 0;
+        }
+/*divizão da página*/
+        .estrutura{
+            display: grid;
+            grid-template-columns: minmax(200px, 1fr) 3fr 1fr;
+            grid-template-areas: "header header header"
+            "imagem conteudo none"  
+        "footer footer footer"}
+
+            h1{
+                font-size: 70px;
+                text-align: center;
+            }
+
+            p{
+                font-size: 30px;
+                text-align: center;
+            }
+
+            a{
+                display: block;
+                font-size: 30px;
+                text-align: center;
+            }
+/*tamanho da imagem*/
+            img{
+                height: 500px;
+                
+                margin-left: 500px;
+                margin-right: 500px;
+            }
+            /*estilização do rodapé*/
+            footer{
+                background-color: rebeccapurple;
+                height:150px;
+                margin-top: 160px;
+            }
